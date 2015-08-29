@@ -1,0 +1,44 @@
+.div1
+{
+	width:500px;
+	height:500px;
+	border:1px solid red;
+	margin:0 auto;
+}
+
+.div2
+{
+	padding:0px;
+}
+
+.div3
+{
+	float:right;
+	
+}
+
+.div4
+{
+	width:400px;
+	height:130px;
+	border:1px solid blue;
+	margin-left:50px;
+	padding:0px;
+}
+
+.div4 li
+{
+	list-style-type:none;
+	float:left;
+}
+.div4 img
+{
+	width:60px;
+	height:60px;
+	margin-left:50px;
+	margin-top:5px;
+}
+a
+{
+	text-decoration:none;
+}

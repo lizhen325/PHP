@@ -1,0 +1,103 @@
+1.father-son selector
+
+ex1:
+
+#id1
+{
+	font-size:20px;
+}
+
+#id1 span
+{
+	font-size:30px;
+	font-weight:bold;
+	background-color:red;
+}
+<span id = "id1"> it is a <span>important</span> news</span>
+
+2. one element not only has id selector but also has class selector
+
+ex:
+<span class="s1" id="news_special">news</span>
+
+3. one element only has one id selector, but it can have some class selector
+
+ex:
+<span class="s1 s2" id="news_special">news2</span>
+
+////////////////////////////////////////////////////////////
+1.inline element: <span> <a> <input type="">
+only display for each element
+
+2.block element: <div> <p>
+only influence on width, display one line and automatically<br/>
+
+ex:
+<body>
+<span class="s1">span1</span>
+<span class="s1">span2</span>
+<span class="s1">span3</span>
+<div class="s2">div1</div>
+<div class="s2">div2</div>
+</body>
+
+3.inline and block element can transfer each other 
+display:inline or display:block
+ex:
+.s1
+{
+	background-color:red;
+	display:block;
+}
+.s2
+{
+	background-color:gray;
+	display:inline;
+}
+
+////////////////////////////////////////
+another css document can use in the current css document
+@import url("comm.css or http://....")
+
+///////////////////////////////////////
+1.flow:order of display in html document
+2.standard flow: 
+3.unstandard flow:
+
+////////////////////////////////////////
+box model:
+1.margin
+2.border
+3.content (div)
+4.padding(between border to content)
+
+see example
+box1.html, box1.css and box2.html, box2.css
+
+//////////////////////////////////////////////////
+float
+1.float left
+2.float right
+3.float clear
+
+///////////////////////////////////////////////////p
+Poistioning
+1.static
+2.relative
+3.absolute
+4.fixed
+
+ex_relative_positioning:
+
+#spe
+{
+	position:relative;/absolute/fixed
+	left:40px;
+	top:100px;
+}
+
+z-index:overlap photo
+the bigger number can overlap the smaller number's photo
+ex:
+
+z-index:5

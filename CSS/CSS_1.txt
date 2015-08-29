@@ -1,0 +1,147 @@
+History
+1. table
+2. table + css
+3. div + css
+div + css
+
+div is store data to display, css is used to display
+
+disadvantages:
+1. data and style combine together.
+2. one HTML page should have lots of tatble.
+3. low flexibility
+4. bandwidth
+
+advantages:
+1. easy to understand
+2. display different with different IE
+3. easy to display
+4. W3C
+
+ex:
+in html document
+<head>
+<title>Log In</title>
+<link rel="stylesheet" type="text/css" href="my.css"/>
+</head>
+<body>
+<div class="style">
+<img src="2.jpg">
+</div>
+</body>
+
+in css cocument
+.style{
+	width: 400px;
+	height: 300px;
+	background-color:red;
+	border:1px solid red;
+	margin-left:400px;
+	margin-top:300px;
+	padding-top:20px;
+	padding-left:30px;
+}
+font-size:10px;
+font-weight:bold;
+font-style:italic;
+text-decoration:underline;
+
+main four selector:
+1. class selector
+2. id selector
+3. html element selector
+4. widecard character selector
+
+1. class selector
+.name_class_selector
+{
+	background-color:red;
+		.
+		.
+		.
+}
+
+ex:
+in my.css file
+.s1
+{
+	background-color:red;
+	font-weight:bold;
+}
+in html file
+html>
+<head>
+<link rel="stylesheet" type="text/css" href="my.css">
+</head>
+<body>
+<span class="s1">New 1</span>
+<span class="s1">New 2</span>
+<span class="s1">New 3</span>
+<span class="s1">New 4</span>
+<span class="s1">New 5</span>
+</body>
+</html>
+
+2.id selector
+# id_name
+{
+	background-color:blue;
+		.
+		.
+		.
+}
+ex:
+
+#id1
+{
+	background-color:blue;
+	font-size:20px;
+}
+
+<span id="id1"> this news is so impartant</span>
+
+3.html element selector
+html element_name
+{
+	.
+	.
+	.
+}
+ex1:
+body
+{
+	color:orange;
+}
+
+ex2:
+p.cls1
+{
+	color:bule;
+	font-size:30px;
+}
+p.cls2
+{
+	color:red;
+	font-size:20px;
+}
+
+4. widecard character selector
+this selector is used in all html elements
+*
+{
+	margin-top:40px;
+	margin-left:0px;
+}
+
+important ************
+before start design, must be set as following.
+because it is avoid IE xian rong
+*{
+	margin:0px;
+	padding:0px;
+}
+
+
+priority of four selectors:
+id selector > class selector > html element selector> widecard character selectro
+
