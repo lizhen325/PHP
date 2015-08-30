@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Excercise 3</title>
+<script language="javascript" type="text/javascript">
+<!-- multiple dimensinal array -->
+var arr=[["Acukland",123,4.5],["a","b","c"],[90,0]];
+for(var i=0; i<arr.length; ++i)
+{
+	for(var j=0; j<arr[i].length; ++j)
+	{
+		document.writeln(arr[i][j]+",");
+	}
+}
+<!-- display c -->
+document.writeln("<br/>"+arr[1][2]+"<br/>");
+
+/*
+	0 0 0 0 0 0
+	0 0 1 0 0 0
+	0 2 0 3 0 0
+	0 0 0 0 0 0
+*/
+<!-- display the above numbers of array -->
+
+var arr1=
+		[
+		 [0,0,0,0,0,0],
+		 [0,0,1,0,0,0],
+		 [0,2,0,3,0,0],
+		 [0,0,0,0,0,0]
+		 ];
+for(var i=0;i<arr1.length;++i)
+{
+	for(var j=0;j<arr1[i].length;++j)
+	{
+		document.writeln(arr1[i][j]+" ");
+	}
+	document.writeln("<br/>");
+}
+/*
+	2 4 6 8				2 8 9
+	8 9 0 -1	=>		4 9 6
+	9 6 2 1				6 0 2
+						8 -1 1
+*/
+var arr4=[[2,4,6,8],[8,9,0,-1],[9,6,2,1]];
+<!-- new array -->
+var arr5=[];
+<!-- initialisation  -->
+for(var i=0; i<arr4[0].length;++i)
+{
+	arr5[i]=[];
+}
+<!--  -->
+for(var i=0; i<arr4.length;++i)
+{
+	for(var j=0; j<arr4[i].length;++j)
+	{
+		arr5[j][i]=arr4[i][j];
+	}
+}
+for(var i=0; i<arr5.length;++i)
+{
+	for(var j=0; j<arr5[i].length; ++j)
+	{
+		document.writeln(arr5[i][j]+"&nbsp");
+	}
+	document.writeln("<br/>");
+}
+
+<!-- bubble sort -->
+document.writeln("bublle sort<br/>");
+var arr2=[3,4,2,0,5];
+for(var i=0; i<arr2.length-1;++i)
+{
+	for(var j=0;j<arr2.length-1-i;++j)
+	{
+		if(arr2[j]>arr2[j+1])
+		{
+			<!-- swap -->
+			var temp=arr2[j];
+			arr2[j]=arr2[j+1];
+			arr2[j+1]=temp;
+			flag=true;
+		}
+	}
+	if(flag)
+		flag=false;
+	else
+		break;
+} 
+for(var i=0;i<arr2.length;++i)
+{
+	document.writeln(arr2[i]+"&nbsp");
+}
+document.writeln("<br/>");
+document.writeln("binary search<br/>");
+<!-- binary search can olny use in already sorted numbers-->
+var arr3=[1,2,3,4,5,6,7,8,9];
+function BinarySearch(arr,findval,leftIndex,rightIndex)
+{
+	if(leftIndex>rightIndex)
+	{
+		document.writeln("cannot find");
+		return;
+	}
+	<!-- find mid value use Math.floor -->
+	<!-- Math.floor: if(a=1.5) a=2  -->
+	var midIndex=Math.floor((leftIndex+rightIndex)/2);
+	var midval=arr3[midIndex];
+	<!-- compare -->
+	if(midval>findval)
+		BinarySearch(arr,findval,leftIndex,midIndex-1);
+	else if(midval<findval)
+		BinarySearch(arr,findval,midIndex+1,rightIndex);
+	else
+	{
+		document.writeln("found in "+midIndex);
+		return;
+	}
+}
+BinarySearch(arr3,1,0,arr3.length-1);
+</script>
+</head>
+</html>

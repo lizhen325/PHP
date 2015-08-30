@@ -1,0 +1,50 @@
+/////////////////////////////////////////////////
+two dimensional array
+ex:
+var arr=[["Acukland",123,4.5],["a","b","c"]];
+for(var i=0; i<arr.length; ++i)
+{
+	for(var j=0; j<arr[i].length; ++j)
+	{
+		document.writeln(arr[i][j]+",");
+	}
+}
+
+///////////////////////////////////////////////'
+sort
+1.bubble sort
+
+ex:
+var arr2=[3,4,2,0,5];
+for(var i=0; i<arr2.length-1;++i)
+{
+	for(var j=0;j<arr2.length-1-i;++j)
+	{
+		if(arr2[j]>arr2[j+1])
+		{
+			<!-- swap -->
+			var temp=arr2[j];
+			arr2[j]=arr2[j+1];
+			arr2[j+1]=temp;
+			flag=true;
+		}
+	}
+	if(flag)
+		flag=false;
+	else
+		break;
+} 
+for(var i=0;i<arr2.length;++i)
+{
+	document.writeln(arr2[i]+"&nbsp");
+}
+////////////////////////////////////////////////
+Search
+1. linear search
+2. binary search:only search in already sorted number
+	1. find mid value
+	2. compare the value(findvalue) to mid value
+	3. if midvalue> findvalue put to left
+	4. else put to right
+	
+
