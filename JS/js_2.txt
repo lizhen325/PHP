@@ -1,0 +1,74 @@
+///////////////////////////////////////
+js function: no return type;
+
+function function_name(argument)
+{
+	//dont add type(var) in argument list	
+}
+
+ex:
+<script language="javascript" type="text/javascript">
+var num1=window.prompt("please input the first number");
+var num2=window.prompt("please input the second number");
+var operator=window.prompt("please input the operator");
+num1=parseFloat(num1);
+num2=parseFloat(num2);
+function calculate(num1,num2,operator)
+{
+	var result=0;
+	if(operator=="+")
+		result=num1+num2;
+	else if(operator=="-")
+		result=num1-num2
+	else if(operator=="*")
+		result =num1*num2;
+	else
+		result=num1/num2;
+	return result;
+}
+document.write("result="+calculate(num1,num2,operator));
+</script>
+
+////////////////////////////////////////////////
+function in js file, how to link the function to html file
+<script language="javascript" src="myfunction.js"></script>
+
+///////////////////////////////////////////////////
+
+eval() change string to script.
+escape()/unescape() avoid messy code. ex:chinese, korean, japanes
+/////////////////////////////////////////////////
+function call
+ex:
+function test(val)
+{
+	window.alert("you typed: "+val);
+}
+1.test("hello.world");
+2.var myvar=test;
+  myvar("HELLO WORLD!!!");
+
+3.var myvar=test("abc");
+  window.alert(myvar);	//output is undefinded, because the test function has no return type.
+
+//////////////////////////////////////////////
+recursion function
+function abc(num1)
+{
+	if(num1>3)
+	{
+		abc(--num1);
+	}
+	document.write(num1);
+}
+abc(5)	//output is 3,3,4
+
+//////////////////////////////////////////
+in js, arguments can visit all input value.
+ex:
+function abc()
+{
+	window.alert(arguments.length);
+	for(int i=0; i<arguments.length;++i)
+	window.alert(arguments[i]);
+}

@@ -1,0 +1,34 @@
+<html>
+<head>
+<script language="javascript" src="ex1.js"></script>
+<script language="javascript" type="text/javascript">
+<!-- first example -->
+<!-- input two numbers -->
+var num1=window.prompt("please input the first number");
+var num2=window.prompt("please input the second number");
+<!-- input a operatr -->
+var operator=window.prompt("please input one operator");
+<!-- type converstion to float -->
+num1=parseFloat(num1);
+num2=parseFloat(num2);
+<!-- display -->
+document.write("result: "+calculate(num1,num2,operator));
+<!-- second example -->
+<!-- function call -->
+test("hello word");
+var myvar=test;
+myvar("HELLO WORLD!!!");
+
+var myvar=test("abc");
+<!-- output is undefinded, because the test function has no return type -->
+window.alert(myvar);
+
+<!-- arguments can visit all input values -->
+abc(24,3,29);
+
+
+</script>
+</head>
+<body>
+</body>
+</html>

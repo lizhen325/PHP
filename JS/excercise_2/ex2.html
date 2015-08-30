@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Excercise 2</title>
+<script language="javascript" src="ex2.js"></script>
+<script language="javascript" type="text/javascript">
+<!-- array calculate sum and average -->
+var weights=[3,5,1,3.4,2,50];
+var all_weights=0;
+var avg_weights=0;
+for(var i=0; i<weights.length;++i)
+{
+	all_weights+=weights[i];
+}
+avg_weights=all_weights/weights.length;
+
+<!-- object.toFixed(number) -->
+document.writeln("all weight is: "+all_weights+"<br/>"+"average weight is: "+avg_weights.toFixed(2)+"<br/>");
+
+<!-- string convert to array -->
+var str="hello word abc newzeland";
+<!-- var arr=str.split(); -->//arr[0]=hello arr[1]=word arr[2]=abc arr[3]=newzeland
+<!-- var arr=str.split("",2); //arr[0]=h arr[1]=e -->
+var arr=str.split("")//arr[0]=h arr[1]=e ......
+for(var i=0; i<arr.length;++i)
+{
+	document.writeln(arr[i]+" ");
+}
+
+<!-- anohter version to display array -->
+var arr2=[45,90,900];
+for(var key in arr2)
+{
+	window.alert(key+"="+arr2[key]);
+}
+</script>
+</head>
+</html>

@@ -1,0 +1,155 @@
+why Javascript:dynamic language //ajax,jquery,extjs
+html:static language	
+in industry:
+1.online game
+2.goole map
+3.web chating
+4.stock market
+////////////////////////////////////////
+JS simple ex:
+<html>
+<head>
+<script landscape="javascript">
+function test()
+{
+	window.alert("hello")
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="test()" value="clcik me"/>
+</body>
+</html>
+
+////////////////////////////////
+1.JS can put in head or body
+2.JS must be use <script language="javascript">
+ex:
+<head>
+<script language="javascript">
+window.alert("Hello World");
+</script>
+</head>
+
+////////////////////////////////
+variable: 
+1.var, no data type like(int, float, double...)
+2.variable name cannot begin at number
+3.donot use key word for variable name(short, long...)
+
+ex:
+var 2num2=34;	//error
+var int=23	//error
+var num2=24;	//OK
+
+add function:
+ex:
+
+	var num1=3;
+	var num2=2.3;
+	var result=num1+num2;
+	window.alert("result is"+result);
+
+/////////////////////////////////
+data type has three types
+1.number type:
+2.bool type: true or flase
+3.string type:"abc",'abc','a'
+
+typeof can see data type
+ex:
+var num1=-23;
+window.alert(typeof(num1));	//output is number
+
+special type:
+1.null
+2.undefine
+
+ex:
+var tt;
+	window.alert(tt);	//undefine
+	tt=null;
+	window.alert(tt);
+complex type:
+1.array
+2.object
+
+///////////////////////////////////////////////
+number type
+1.heximal:0x8a //8*16+10
+2.octonal: 0123 //3+2*2+1*4+0*8
+3.decimal:123,12.32,5E7,4e5
+4.special number:inifity,NaN(not a number),isNaN(),isFinite()
+ex:
+var a="123";
+window.alert(parseInt(a));	//NaN
+window.alert(6/0);		//inifity
+window.alert(isNaN(a)); 	//true
+window.alert(isFinite(a));	//false
+
+string type: /t,/r,/n etc
+
+/////////////////////////////////////////////
+type conversion: parseInt(). parseFloat()
+var a="12345";
+a=parseInt(a);
+
+/////////////////////////////////////////////
+operator: +,-,*,/,%,++,--,+=,=+,/=,%=,>,<,>=,<=,==
+
+////////////////////////////////////////////
+input:
+var val=window.prompt("plz input a number");
+output:
+document.writeln("your input number is:"+val);
+
+ex:
+var val=window.prompt("input number:");
+var val2=window.prompt("one more input:");
+document.writeln("your input number is:"+(parseFloat(val)+ parseFloat(val2)));
+
+////////////////////////////////////////////
+logic operator: &&, ||, !
+!:0,"",false,null,undefined,NaN all are flase;
+////////////////////////////////////////////
+shift left, right
+
+var a=4>>2;
+//4	0000,0100	0000,0001
+result is 1
+
+var a=-4>>2;
+//-4>>2	1000,0000 0000,0100 -> 11111111 11111011 ->(+1) 11111111 11111100
+ ->(shift right 2) 1111111111 111111 ->(-1) 11111111 11111110
+ ->(inverse) 10000000 00000001	
+result is -1 
+
+////////////////////////////////////////
+conditional: if,else; switch;
+ex:
+var num1=window.prompt("input your age:");
+	switch(num1)
+	{
+	case 1:
+		window.alert("your number is 1");
+		break;
+	case 2:
+		window.alert("your number is 2:");
+		break;
+	default:
+		window.alert("your number is"+num1);
+	}
+
+loop: for; while;
+ex:
+for(var i=0; i<10; i++){
+	document.writeln(i);
+	}
+	
+	var i = 0;
+	while(i<10)
+	{
+		document.writeln(i);
+		i++;
+	}
+//////////////////////////////////////////////

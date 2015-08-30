@@ -1,0 +1,55 @@
+////////////////////////////////////////
+array(is reference type/complex type in JS)is used to store lots of data with different types.
+ex:
+var a = ["string", 1, 2.1, "3.1", true];
+a[2] is 2.1
+what about a[6]? output is undefined
+a.length	//size is 4
+
+var myval=900;
+function abc(val)
+{
+	val=90;
+}
+abc(myval);
+window.alert(myval);//output is 900;
+
+//reference type can change.
+var a=[456,90,900];
+function abc2(arr)
+{
+	a[0]=30;
+}
+abc(a);
+for(var i=0;i<myarr.length;i++)
+{
+	document.writeln(a[i]) //output is 30,90,900
+}
+
+///////////////////////////////////////////
+split
+ex:
+<!-- string convert to array -->
+var str="hello word abc newzeland";
+<!-- var arr=str.split(); -->//arr[0]=hello arr[1]=word arr[2]=abc arr[3]=newzeland
+<!-- var arr=str.split("",2); //arr[0]=h arr[1]=e -->
+var arr=str.split("")//arr[0]=h arr[1]=e ......
+for(var i=0; i<arr.length;++i)
+{
+	document.writeln(arr[i]+" ");
+}
+
+//////////////////////////////////////////
+another version display array
+for(var key in arr)
+{
+window.alert(key+"="+arr[key]);
+}
+
+ex:
+
+var arr2=[45,90,900];
+for(var key in arr2)
+{
+	window.alert(key+"="+arr2[key]);
+}
