@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Excercise 4</title>
+<script language="javascript" type="text/javascript">
+/////////////////////////////////////////////
+<!-- simple example of class -->
+function cat()
+{
+}
+var cat1=new cat();
+cat1.name="lisa";
+cat1.age=23;
+cat1.color="white";
+document.writeln(cat1.name+"<br/>");
+document.writeln(cat.constructor+"<br/>");
+document.writeln(typeof cat1+"<br/>");
+
+///////////////////////////////////////////
+<!-- in JS, all things are object -->
+var a=123;
+document.writeln(a.constructor+"<br/>");
+var b="string";
+document.writeln(b.constructor+"<br/>");
+
+if(cat1.constructor==cat)
+window.alert("cat1 is cat class");
+
+if(cat1 instanceof cat)
+window.alert("cat1 is cat class as well");
+
+/////////////////////////////////////////////
+<!-- object call has two types -->
+function person(){};
+var p1=new person();
+p1.name="Li Zhen";
+document.writeln(p1.name+"<br/>");
+document.writeln(p1["name"]+"<br/>");
+
+<!-- copy constructor -->
+var p2=p1;
+p2.name="Zhen Li";
+document.writeln(p1.name+"<br/>");
+document.writeln(p2.name+"<br/>");
+
+////////////////////////////////////////////////////
+<!-- this key word -->
+function Person()
+{
+	this.name="aaabbbccc";
+	this.age="27";
+}
+
+var p3=new Person();
+var p4=new Person();
+document.writeln(p3.name+p3.age+"<br/>");	//aaabbbccc 27
+document.writeln(p4.name+p4.age+"<br/>");	//aaabbbccc 27
+
+////////////////////////////////////////////////////////
+<!-- private and public -->
+
+function Person1()
+{
+<!-- private member -->
+	var name="abc";
+	var age=900;
+	<!-- public member -->
+	this.name2="ab2";
+	<!-- private member function -->
+	function show2()
+	{
+		document.writeln(name+age);
+	}
+	<!-- public member function -->
+	this.show=function()
+	{
+		document.writeln(name+age);
+	}
+}
+var p5=new Person1();
+document.writeln(p5.name2);
+p5.show();
+
+///////////////////////////////////////////////////
+<!-- member function -->
+
+function Person2(name, age)
+{
+<!-- public member -->
+	this.name=name;
+	this.age=age;
+	<!-- public member function, the function name is show-->
+	this.show=function()
+	{
+		document.writeln("name = "+this.name);
+	}
+}
+var p6=new Person2("Li Zhen","27");
+p6.show();
+///////////////////////////////////////////////
+<!-- all object can share the function -->
+
+function Dog(){}
+var dog1=new Dog();
+<!-- prototye.shout-->
+Dog.prototype.shout=function()
+{
+	window.alert("one dog");
+}
+dog1.shout();	//one dog
+var dog2=new Dog();
+dog2.shout();	//one dog
+
+</script>
+</head>
+</html>
