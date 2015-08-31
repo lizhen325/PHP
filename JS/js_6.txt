@@ -1,0 +1,63 @@
+///////////////////////////////////////////////////////
+object class: base class
+main properties:
+1.constructor
+2.prototype
+
+ex:
+function person()
+{
+
+}
+var p=new Object();
+p.name="Li Zhen";
+document.writeln(p.name);
+
+
+////////////////////////////////////////////////////
+Array class:
+1.reverse
+2.find value
+
+ex:
+<!-- array class -->
+var arr=new Array(3);
+arr[0]="Auckland";
+arr[1]="Wellington";
+arr[2]="Chrischurch";
+<!-- reverse array -->
+arr.reverse();
+<!-- display -->
+for(var i=0;i<arr.length;++i)
+{
+	document.writeln(arr[i]);
+}
+
+<!-- find value -->
+Array.prototype.find=function(val)
+{
+	for(var i=0; i<this.length;++i)
+	{
+		if(val==this[i])
+			return i;
+	}
+	return -1;
+}
+document.writeln("<br/>"+"the "+arr.find("Auckland")+" array");
+
+////////////////////////////////////////////
+in JS, there is no function overload. 
+if some functions are with the same name, the function will run the last function
+
+ex:
+function test(a)
+{
+	window.alert(a);
+}
+function test(a,b)
+{
+	window.alert(a,b);
+}
+test(23);
+window.test(2,"hello");
+

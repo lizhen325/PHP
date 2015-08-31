@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Super Mario</title>
+<link rel="stylesheet" type="text/css" href="super_mario.css"/>
+<script language="javascript" type="text/javascript">
+<!-- Mario class -->
+function Mario()
+{
+	this.x=0;
+	this.y=0;
+	<!-- 0->moveup 1->move_right -->
+	this.move=function(direction)
+	{
+		switch(direction)
+		{
+			case 0:
+				var mymario=document.getElementById("mymario");
+				var up=mymario.style.top;
+				up=parseInt(up.substr(0,up.length-2));
+				mymario.style.top=(up-20)+"px";
+				break;
+			case 1:
+				var mymario=document.getElementById("mymario");
+				var left=mymario.style.left;
+				<!-- pixel convert to string then int -->
+				<!-- length-2 as it is pixel-->
+				left=parseInt(left.substr(0,left.length-2));
+				mymario.style.left=(left+20)+"px";
+				break;
+			case 2:
+				var mymario=document.getElementById("mymario");
+				var up=mymario.style.top;
+				up=parseInt(up.substr(0,up.length-2));
+				mymario.style.top=(up+20)+"px";
+				break;
+			case 3:
+				var mymario=document.getElementById("mymario");
+				var left=mymario.style.left;
+				<!-- pixel convert to string then int -->
+				<!-- length-2 as it is pixel-->
+				left=parseInt(left.substr(0,left.length-2));
+				mymario.style.left=(left-20)+"px";
+				break;
+		}
+	}
+}
+
+var mario=new Mario();
+<!-- global function -->
+function marioMove(direction)
+{
+	switch(direction)
+	{
+		case 0:
+			mario.move(direction);
+			break;
+		case 1:
+			mario.move(direction);
+			break;
+		case 2:
+			mario.move(direction);
+			break;
+		case 3:
+			mario.move(direction);
+			break;
+	}
+}
+</script>
+</head>
+<body>
+<div class="gamediv">
+<img id="mymario" style="width:40px; hegiht:40px;left:20px; top:50px;position:absolute;"src="mario.jpeg"/>
+</div>
+<table border="1px" class="control">
+<tr>
+<td colspan="3">Key Board</td>
+</tr>
+<tr>
+<td>**</td>
+<td><input type="button" value="UP" onclick="marioMove(0)"></td>
+<td>**</td>
+</tr>
+<tr>
+<td><input type="button" value="LEFT" onclick="marioMove(3)"></td>
+<td>**</td>
+<td><input type="button" value="RIGHT" onclick="marioMove(1)"></td>
+</tr>
+<tr>
+<td>**</td>
+<td><input type="button" value="Bottom" onclick="marioMove(2)"></td>
+<td>**</td>
+</tr>
+</table>
+<body>
+</html>
