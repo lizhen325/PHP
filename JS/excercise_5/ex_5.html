@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Excercise 5</title>
+<script language="javascript" type="text/javascript">
+///////////////////////////////////////////////
+<!-- object class -->
+function person()
+{
+
+}
+var p=new Object();
+p.name="Li Zhen";
+document.writeln(p.name+"<br/>");
+window.alert(p.constructor);
+
+////////////////////////////////////////////////
+/* they are the same constructor which is Number.
+var i=new Number(10);
+var i=10;*/
+var i=new Number(10);
+Number.prototype.add=function(a)
+{
+	return this+a;
+}
+document.writeln(i.add(10).add(30)+"<br/>"); //50
+var b=90;
+document.writeln(b.add(40)+"<br/>");	//130
+
+////////////////////////////////////////////////
+<!-- array class -->
+var arr=new Array(3);
+arr[0]="Auckland";
+arr[1]="Wellington";
+arr[2]="Chrischurch";
+<!-- reverse array -->
+arr.reverse();
+<!-- display -->
+for(var i=0;i<arr.length;++i)
+{
+	document.writeln(arr[i]);
+}
+
+<!-- find value -->
+Array.prototype.find=function(val)
+{
+	for(var i=0; i<this.length;++i)
+	{
+		if(val==this[i])
+			return i;
+	}
+	return -1;
+}
+document.writeln("<br/>"+"the "+arr.find("Auckland")+" array");
+
+</script>
+</head>
+</html>

@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>Excercise 6</title>
+<script language="javascript" type="text/javascript">
+/////////////////////////////////////////////////////
+function calculate(num1,num2,operator)
+{
+	if(operator=="+")
+		return num1+num2;
+}
+function person(name,age,fun)
+{
+	this.name=name;
+	this.age=age;
+	this.myfun=fun;
+}
+
+var p1=new person("aa",27,calculate);
+document.writeln(p1.myfun(1,1,"+"));
+
+////////////////////////////////////////////
+<!-- constructor initialistion list -->
+var p2={name:"Li Zhen", age:8,fun1:function(){document.writeln("hello world")}};
+document.writeln(p2.name);
+p2.fun1();
+
+//////////////////////////////////////////////////////////////
+<!-- antoher version constructor call-->
+var dog={name:"hello"};
+function test()
+{
+	document.writeln(this.name);
+}
+test();	//undefined
+window.test(); //undefiend
+test.call(dog); //=> dog.test() output is hello
+
+///////////////////////////////////////////////////////////////
+<!-- useing for .... in  list constructor-->
+var dog1={name:"Jin",fun1:function(a,b){document.writeln("result="+a+b);}};
+for (var key in dog1)
+{
+	document.writeln(dog1[key]);
+}
+
+///////////////////////////////////////////////
+<!-- encapsulation -->
+function person1(name,age_i,salary_i)
+{
+	<!-- public member-->
+	this.name=name;
+	<!-- private member -->
+	var age=age_i;
+	var salary=salary_i
+	<!-- public member function -->
+	this.show=function()
+	{
+		document.writeln(age+" "+salary);
+	}
+}
+var p3=new person1("Li Zhen",15,50000);
+document.writeln(p3.name);
+p3.show();
+
+//////////////////////////////////////////
+<!-- prototype cannot access private member -->
+function person2()
+{
+	this.name="abc";
+	var age=90;
+}
+person2.prototype.fun2=function()
+{
+	window.alert(this.name);	//ok because name is public member
+	//window.alert(age);			//error age is private member 
+}
+var p4=new person2();
+p4.fun2();
+
+////////////////////////////////////////////
+<!-- inheritance -->
+<!-- baseclass -->
+function Stu(name,age)
+{
+	this.name=name;
+	this.age=age;
+	this.show=function()
+	{
+		window.alert(this.name+" "+this.age);
+	}
+}
+<!-- subclass -->
+function midstu(name,age)
+{
+	<!-- inheritence part -->
+	this.stu=Stu;
+	this.stu(name,age);
+	<!-- public member function only in midstu -->
+	this.show2=function(money)
+	{
+		window.alert(money*0.8);
+	}
+}
+<!-- subclass -->
+function prestu(name,age)
+{
+	this.stu=Stu;
+	this.stu(name,age);
+	this.show2=function(money)
+	{
+		window.alert(money*0.5);
+	}
+}
+var midstu=new midstu("Li Zhen",27);
+var prestu=new prestu("aaa",19);
+midstu.show();
+midstu.show2(10);
+prestu.show2(10);
+
+///////////////////////////////////////
+<!-- polynomic -->
+function Master()
+{
+	this.feed=function(animal,food)
+	{
+		document.writeln("master feed "+animal.name+" to "+food.name);
+	}
+}
+<!-- base class -->
+function Food(name)
+{
+		this.name=name;
+}
+<!-- subclass of food -->
+function Fish(name)
+{
+	this.food=Food;
+	this.food(name);
+}
+<!-- subclass of food -->
+function Bone(name)
+{
+	this.food=Food;
+	this.food(name);
+}
+<!-- base class -->
+function Animal(name)
+{
+	this.name=name;
+}
+<!-- subclass of animal-->
+function Dog1(name)
+{
+	this.animal=Animal;
+	this.animal(name);
+}
+<!-- subclass of animal-->
+function Cat1(name)
+{
+	this.animal=Animal;
+	this.animal(name);
+}
+var cat=new Cat1("lily");
+var dog=new Dog1("lisa");
+var fish=new Fish("sniper");
+var bone=new Bone("bone");
+var master=new Master();
+master.feed(cat,fish);
+
+/////////////////////////////////////
+<!-- closure -->
+
+function A()
+{
+	var i=0;
+	function b()
+	{
+		window.alert(i++);
+	}
+	return b;
+}
+
+var c=A();
+c();					//output is 0
+
+</script>
+</head>
+</html>
