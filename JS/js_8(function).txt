@@ -1,0 +1,88 @@
+///////////////////////////////////////////
+JS internal class: dynamic class (var a=new person())and static class(Math,Array)
+1.Object
+2.Array
+3.Math
+4.Boolean
+5.String
+6.RegExp
+7.Data
+8.Number
+
+ex:
+
+<!-- Math -->
+window.alert(Math.abs(-1));	//static class
+<!-- Data -->
+var nowdate=new Date();		//dynamic class
+window.alert(nowdate.toLocaleString());
+
+//////////////////////////////////////////////
+Math
+1.abs(x)	//return absolute value
+2.ceil(x)	//ceil(4.5)	5
+3.floor(x)	//floor(4.5)	4
+3.random(x)	//return a random number(bigger than0 smaller than1 16bit factorial number)
+4.min(x)/max(x)	//return a minimum/maximum number
+5.round(x)	//round(4.5)	5
+
+///////////////////////////////////////////////
+Date
+var nowdate=new Date();
+1.Date()	//return current time and date.
+2.getDate();	//return the current date
+3.getDay();	//return 1(Monday),2(Tuesday),3(Wed),...
+4.getHours();
+5.getMinutes();
+6.getSeconds();
+
+////////////////////////////////////////////////
+string
+var str="abcd"
+1.length		//str.length	//return the size of string //4
+2.split("")		//str.split("")	//sperate the string 	//a,b,c,d
+3.substr(start,length)	//str.substr(1,3)//display the string from start to length bcd
+4.substring(start,length-1)//str.substring(1,3)		//bc
+5.charAt(number)			//return a character
+6.indexOf(searchvalue,finalindex)
+var str="ab 123 56 ab";
+str.indexOf("ab")	//0
+str.indexOf("ab",1)	//10
+str.indexOf("yyyy",1)	//-1
+
+///////////////////////////////////////////////////
+Array: dynamic class
+var arr=new Array();
+1.length
+2.join()
+3.pop()
+4.sort()
+5.push()
+
+////////////////////////////////////////////////
+
+Boolean: dynamic class
+var boo=new Boolean();
+1.toString()
+2.valueof()
+
+/////////////////////////////////////////////////
+
+Number
+1.toString()	//decimal
+		//toString(2)	binary
+		//toString(16)	hex
+2.fixedto()
+3.MAX_VALUE
+4.MIN_VALUE
+
+//////////////////////////////////////////////
+
+system function
+
+1.decodeURI()
+2.encodeURI()
+3.eval{}	//string to script
+4.parsefloat
+5.parseInt
+6.isNaN()

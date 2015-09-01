@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Excercise 7</title>
+<script language="javascript" type="text/javascript">
+
+/*
+<!-- Math -->
+window.alert(Math.ceil(4.5));		//5
+window.alert(Math.floor(4.5));	//4
+window.alert(Math.round(4.5));	//5
+window.alert(Math.random());	
+window.alert(Math.round(Math.random()*100));
+*/
+
+<!-- Date  is dynamic class-->
+/*var nowdate=new Date();
+window.alert(Date());
+window.alert(nowdate.getDay());
+
+function show(date)
+{
+	if(date.getHours()>=0 && date.getHours()<12)
+		window.alert("Good Morning");
+	else if(date.getHours()>=12 && date.getHours()<9)
+		window.alert("Good afternoon");
+	else
+		window.alert("Good evening");
+}
+show(nowdate);*/
+
+<!-- string -->
+/*
+var test="abcde";
+window.alert(test.length);		//5
+window.alert(test.substr(0,2));	//ab
+window.alert(test.substring(1,3));	//bc
+window.alert(test.charAt(1));	//b
+var test="ab 123 45 ab 45";
+window.alert(test.indexOf("yyyy",1));	//-1
+window.alert(test.indexOf("ab"),1);		//10;
+*/
+
+<!-- Array -->
+/*
+var arr=new Array();
+window.alert(arr.length);	//0
+arr[0]="New Zealand";
+arr[1]="China";
+arr[2]="Korea";
+window.alert(arr.length);	//3
+arr.pop();					//remove Korea
+window.alert(arr.length);	//2
+arr.push("France");			//add a element	
+window.alert(arr);			//New Zealand,China, France
+*/
+
+<!-- Number -->
+/*
+var a=890;					//int type
+var b=a.toString();				//string type
+window.alert(b.constructor);
+
+a=a.toFixed(2);
+window.alert(a);			//890.00
+
+var b=10;
+window.alert(b.toString(2));	//binary
+window.alert(b.toString(8));	//12
+window.alert(b.toString(16));	//a
+*/
+
+<!-- system function -->
+
+var a=90;
+window.alert(isNaN(a));			//false
+var a="str";
+window.alert(isNaN(a));			//true
+</script>
+</head>
+</html>
