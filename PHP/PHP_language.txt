@@ -1,0 +1,293 @@
+web: static web(html,css), dynamic web(js,php)
+PHP:php Hypertext Preprocessor
+
+<?php
+	echo "abc";	//output
+	$a=890;		//variable
+	echo ($a);	//890;
+	var_dump($a)	//variable type
+	echo("<br/>")	//new line
+	$a=0x1A		//hexdecimal
+
+?>
+
+type
+1.int
+2.float/double
+3.boolean
+4.string
+
+5.array
+6.object
+
+special data type
+1.null
+2.resource
+
+////////////////////////////////////////////////
+operator:+,-,*,/,++,--
+
+conditional:if(),else if(), switch()
+
+loop:for(), while(), do...while()
+
+//////////////////////////////////////////
+array
+ex1:
+$cars = array("Volvo","BMW","SAAB");
+count($cars);		//length of array
+
+for($x=0; $x<count($cars);$x++)
+{
+	echo &cars[$x];
+}
+
+ex2:
+&age=array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+echo "Peter is".$age['Peter']."years old.";
+foreach($age as $x=>$x_value)
+{
+	echo "Name=".&x.", age=".&x_value;
+}
+
+sort array
+1.sort()
+2.rsort()	//reverse
+3.asrot()
+4.ksort()
+5.arsort()
+6.krsort()
+
+//////////////////////////////////////////////////
+function
+
+function function_name(){}
+function_name();	//call function
+
+require("file_path") and require_once()	//call function from another php document
+include("file_path") and include_once()
+
+difference between them
+if require function got error, then the code will be ended
+but, if include function got error, then the code will be continue performed.
+
+unset($a);	//remove the a variable
+
+////////////////////////////////////////////
+1.$GLOBALS
+2.$_SERVER
+3.$_REQUEST
+4.$_POST
+5.$_GET
+6.$_FILES
+7.$_ENV
+8.$_COOKIE
+9.$_SESSION
+
+
+/////////////////////////////////////////////////
+PHP OO(object oriented)
+
+1.class and object
+
+ex:
+//class cat
+	class cat
+	{
+	//member property
+	public $name="Lily";
+	public $age="10";		
+	}
+	//cat1 is object
+	//create cat1 object
+	$cat1=new cat();
+	//visit and print class of member property
+	echo $cat1->name." ".$cat1->age;
+
+2. member property:can be array and object
+
+3. object can be copy, ($cat2=$cat1). cat2 has the same with cat1's member property
+
+4.memory: stack and heap
+
+in stack:(cat1 point the object(cat))
+in heap: object(cat:name and age)
+$cat2=$cat1	//in stack	address of cat2 is the same with address of cat1
+$cat2->age=15;	//change in heap
+ehco cat1->age;	//output is 15
+
+ex:
+	$i = 68;
+	$j=$i;
+	$j=$j+8;
+	echo $j." ".$i;		//76,68
+	
+	$i=68;
+	$j=&$i;
+	$j=$j+8;
+	echo $j." ".$i;		76,76
+
+ex1:
+function test1($p)
+	{
+		$p->name="lisa";
+	}
+	test1($cat1);
+	echo $cat1->name;
+
+in this case &p is object which called by reference
+
+ex2:
+	$a=10;
+	$b=10.2;
+	function test2($i,$j)
+	{
+		$i=90;
+		$j=90.2;
+	}
+	test2($a,$b);
+	echo $a,$b;	//10,102
+the basic data type called by value
+
+if you want to change the value, the function must be called by reference
+ex3:
+	$a=10;
+	$b=10.2;
+	function test2(&$i,&$j)
+	{
+		$i=90;
+		$j=90.2;
+	}
+	test2($a,$b);
+	echo $a,$b;	//90,90.2
+
+5. member function(funciton in class called member function)
+
+class person
+	{
+		public $name="Li Zhen";
+		public $age=27;
+		//member function
+		public function calculate($b)
+		{
+			$result=0;
+			for($a=0; $a<$b; ++$a)
+			{
+				$result=$result+$a;
+			}
+			return $result;
+		}
+	}
+	//create object 
+	$p = new person();
+	$result=$p->calculate(10);
+	echo $result;
+
+6. Constructor: 
+1.when object is created, constructor automatically called by system
+2.constructor cannot be overloading
+	
+in PHP 5:
+
+<?php
+ class constructor {
+ 	public function __construct() {
+ 		echo "constructor";
+ 	}
+ }
+ 	$c=new constructor();		//output is constructor
+?>
+
+in PHP 4: the constructor function name is the same with class name;
+
+ex:
+<?php
+ class constructor {
+ 	public function constructor(){
+		echo"constructor";
+	}
+ }
+ 	$c=new constructor();
+?>
+
+6.1 this(address of object): current object, only can use in class
+
+ex:
+<?php
+ class constructor {
+ 	public function constructor(){
+		echo"constructor";
+	}
+ }
+ 	$c=new constructor();	//"this" is address of c
+?>
+
+7.destructor: 
+1.destructor can be automatically called
+2.remove object(FILO) used for delete resource
+
+ex:
+ class person{
+ 	
+ 	
+ 	public function __construct()
+ 	{
+		echo "constructor";
+	}
+	public function __destruct()
+	{
+		echo"destructor";
+	}
+ }
+ 
+ $p1=new person();
+
+8.PHP OO(encapsulation,inheritance,polynomic)
+1.encapsulation(private,public,protected)
+	private: only use in class
+	public: all classes can visit
+	protected: only use in class and subclass
+
+2.inheritance
+	class subclass_name extends base_class_name
+	{
+	}
+
+ex:
+ //inheritance
+ class base
+ {
+ 	public $a=10;
+ 	private $b=11;
+ 	protected $c=12;
+ 	
+ 	public function test()
+ 	{
+		echo"test()";
+	}
+	private function test3()
+	{
+		echo"test3()";
+	}
+	protected function test4()
+	{
+		echo"test4";
+	}
+ }
+ 
+ class subclass extends base
+ {
+ 	function show()
+ 	{
+ 		//protected member 
+		echo $this->c;
+		$this->test4();
+	}
+ }
+ $sub=new subclass();
+ echo $sub->a;		//10
+ echo $sub->show(); //test4
+
+3.polynomic
+
+

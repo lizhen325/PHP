@@ -1,0 +1,135 @@
+HTTP(HyperText Transfer Protocol)
+
+http-request
+	basic structure:
+	1. request line
+	//method, URL, Version
+	GET/test/hello.html	HTTP/1.1
+	2. headers
+	Accept: */*(client accept all types of information)
+	Referer:http:			//localhost:80/test/abc.html (reference)
+	Accept-Language:zh-cn		//language
+	User-Agent:Mozilla/4,0		//my browser,OS
+	Accept-Encoding:gzip,deflate	//compressed format
+	Host: localhost:80		//localhost:80
+	Connection:Keep-Alive		//dont disconnect immediately my request
+
+in server, we can through $_SERVER to get information
+$_SERVER is array so we can print them.
+
+foreach($_SERVER as $key=>$val)
+	{
+		echo "$key=$val<br/>";
+	}
+
+//permit IP address
+echo "your ip address is: ".$_SERVER['REMOTE_ADDR'];
+	if($_SERVER['REMOTE_ADDR']=="::1")
+	{
+		header("Location: error.php");
+	}
+
+
+HTTP_HOST
+REMOTE_ADDR: IP address
+DOCUMENT_ROOT: apache main path
+REQUEST_URI:
+HTTP_REFERER:
+if(isset($_SERVER['HTTP_REFERER']))
+{
+	if(strpos($_SERVER['HTTP_REFERER'],"http://localhost")==0)
+	{
+		echo "ok you can see";
+	}
+}
+
+HTTP request method: GET and POST can send information to server.
+1.GET: visible to everyone. limits on amount of information to send(2000 characters) GET should never be used for seding passwords or other sensitive information. can bookmark the page
+2.POST:invisible to others. no limits on the amount of information to send. cannot bookmark the page
+
+///////////////////////////////////////////////
+HTTP respond
+
+	HTTP/1.1 200 OK		//condition		//200 ok client resond sucess
+	Server:Microsoft-IIS/5.0			
+	Date:Thu,13 Jul 2000 05:46:53 GMT		//update date(stock)
+	Content-Length:2291				
+	Content-Type:text/html
+	Cache-control:private				//cache(huan chong)
+100-199:continue
+200~200:success http request :200 OK
+300~399:Redirection: 302(Found),304(Not Modified)
+400~499:client error:403(Forbidden),404(Not Found)
+500~600:server error:500(server error)
+
+header()	//send a raw http header
+
+ex:
+302	Found
+
+//in c.php
+<?php
+//client sends a 302, tells browser revist b.php 
+header("Location:b.php");
+?>
+in b.php
+<?php
+echo "b.php file";
+?>
+
+ex:when the cilent request images twice, it will be 304
+it depends on If-Modified-Since;(update date)
+
+304	Not Modified
+<?php
+	echo "hello";
+	echo <img srd="sunset.jpg"/>
+>
+
+
+More HTTP Respond
+	Content-Encoding:gzip	(gzip compression algorithm)
+	Refresh:1;url=http://www.google.com	(refresh delay 1 second)
+	Set-Cooke:SS=Q0=5Lb_nQ:path=/search	(cookie and seesion)
+	Expires:-1			//cache
+	Cache-Control:no-cache		//cache
+	Pragma:no-cache			//cache
+	Connection:close/Keep-Alive
+	Content-Disposition:
+
+ex: no-cache
+	header("Expires:-1");
+	header("Cach-control: no-cache");
+	header("Pragma: no-cache");
+	echo "hello! cache";
+
+ex: download file 
+1.file types
+1.1 document file: .txt .word
+1.2 binary file: picture, video, music etc
+
+	$file_name="2.jpg";
+	if(!file_exists($file_name))
+	{
+		echo "no file";
+		return;
+	}
+	$fp=fopen($file_name,"r");
+	$file_size=filesize($file_name);
+	//return document
+	header("Content-type: application/octet-stream");
+	//return bytes
+	header("Accept-Ranges: bytes");
+	//return size of document
+	header("Accept-Length: $file_size");
+	//pop-up window
+	header("Content-Disposition: attachment; filename=".$file_name);
+	
+	$buffer=1024;
+	//whether document end or not
+	while(!feof($fp))
+	{
+		$file_data=fread($fp,$buffer);
+		echo $file_data;
+	}
+	fclose($fp);
