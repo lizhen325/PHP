@@ -1,0 +1,36 @@
+
+php->MySQL(dbms)->data object->php
+php code connect to the MySQL(dbms); MySQL(dbms) select from database; database back to php code
+
+* phpinfo();//outputs information about PHPs configuration.
+
+ex:
+//connect to mysql
+$conn = @mysql_connect("localhost","root","") or die("disconnected");
+
+//select database which name is newdb
+mysql_select_db("newdb",$conn);
+	
+//select table
+$sql="SELECT *FROM test";
+
+// perform a query on the database
+$query=mysql_query($sql,$conn);
+	
+//fetch_row to display or can use fetch_array
+while($row=mysql_fetch_row($query))
+{
+	echo $row[0].$row[1].$row[2].$row[3]."<br/>";
+}
+
+
+mysql function
+1.mysql_num_rows	//gets the number of rows in a result
+ex:
+mysql_num_rows($query);	//5
+
+2.mysql_insert_id	//return the auto generated id used in the last query
+
+3.mysql_tablename	//return database name
+5.mysql_error		//error message
+6.mysql_close		//close mysql

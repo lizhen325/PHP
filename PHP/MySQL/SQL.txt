@@ -1,0 +1,105 @@
+data type
+1. TINYINT, SMALLINT, INT, BIGINT
+2. FLOAT, DOUBLE, DECIMAL
+3. CHAR, VARCHAR
+4. DATETIME, DATE, TIMESTAMP
+5. TINYTEXT, TEXT, LONGTEXT
+
+create new database: CREATE TABLE
+remove a database: DROP TABLE
+change : RENAME TABLE 'old_name' TP 'new_name'
+remove : ALTER TABLE 'table' DROP ''
+add: ALTER TABLE 'table' add'new filed'...
+
+1.create table
+ex:
+
+CREATE TABLE 'test'
+{
+	'id' int(10) NOT NULL atuo_increment,
+	'uid' varchar(10) NOT NULL default '0',
+	'regdate' date NOT NULL,
+	'remark' text NULL,
+	PRIMARY KEY('id')
+}
+
+1.SELECT
+2.sort
+3.INSERT
+4.UPDATE
+5.DELETE
+
+
+2.INSERT:
+
+ex:
+create table test(
+    id int(10) not null auto_increment,
+    uid varchar(10) not null default 0,
+    regdate DATE not null,
+    remark TEXT,
+    PRIMARY KEY (id)
+    ) ENGINE=InnoDB DEFAULT CHARSET=gbk AUTO_INCREMENT=5;
+    
+ INSERT INTO test(id,uid,regdate,remark) VALUES
+ (1,'jin', 2015-09-03, 'student'),
+ (2,'kei', 2015-09-04, 'owner'),
+ (3,'moophy', 2015-09-01, 'student'),
+ (4,'sccot', 2015-09-02, 'student');
+
+3. SELECT:SELECT *FROM table_name WHERE conditional(=,<>,in,not in,like,between,not between,and,or,())
+ex:
+
+SELECT id,uid FROM `test` WHERE 1
+
+SELECT remark as r FROM 'test' WHERE 1
+
+SELECT * FROM `test` WHERE id=2
+
+SELECT * FROM `test` WHERE id in(1,2)
+
+SELECT * FROM `test` WHERE `uid` like '%k%'
+
+SELECT * FROM `test` WHERE `id` between 1 and 3
+
+SELECT * FROM `test` WHERE id=1 and remark='student'
+
+ex3:
+
+4. order,group,limit
+
+group by
+ex:
+SELECT * FROM `test` group by `remark`
+
+order by
+ex:
+SELECT * FROM `test` order by `regdate`
+
+inverse order:desc
+SELECT * FROM `test` order by `regdate` desc
+
+SELECT * FROM `test` order by regdate,uid
+
+limit
+ex:
+SELECT * FROM `test` limit 0,3
+
+5. algorithm: count,max,min,avg,sum
+
+count: SELECT count(*) FROM `test` where 1	//4
+max: SELECT max(id) FROM `test` WHERE 1		//4
+min:SELECT min(id) FROM `test` WHERE 1		//1
+avg:	...	...	...	..
+sum:	...	...	...	..
+
+6. INSERT INTO
+ex:
+INSERT INTO `test`(`id`, `uid`, `regdate`, `remark`) VALUES (5,'Peter','2015-09-01','manager')
+
+7. UPDATE table_name SET filed= value WHERE condition (limit)
+ex:
+update test set uid='Tom' where id='5'
+
+8. DELETE FROM table_name WHERE condition
+delete from test where id='5'
