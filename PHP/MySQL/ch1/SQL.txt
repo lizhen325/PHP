@@ -14,12 +14,12 @@ add: ALTER TABLE 'table' add'new filed'...
 1.create table
 ex:
 
-CREATE TABLE 'test'
+CREATE TABLE test
 {
-	'id' int(10) NOT NULL atuo_increment,
-	'uid' varchar(10) NOT NULL default '0',
-	'regdate' date NOT NULL,
-	'remark' text NULL,
+	id int(10) NOT NULL atuo_increment,
+	uid varchar(10) NOT NULL default '0',
+	regdate date NOT NULL,
+	remark text NULL,
 	PRIMARY KEY('id')
 }
 
