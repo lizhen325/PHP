@@ -1,0 +1,10 @@
+1.parse_url(): url convert to array
+ex:
+$ua=parse_url("http://www.w3schools.com/php/default.asp");
+print_r($ua);	//output is Array ( [scheme] => http [host] => www.w3schools.com [path] => /php/default.asp )
+
+2.$_SERVER["REQUEST_URI"]: current URI address after hostname
+
+3.pagination
+
+SELECT * FROM limit($page-1)*$pagesize,$pagesize;
