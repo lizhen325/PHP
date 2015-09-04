@@ -1,0 +1,41 @@
+1.Cookie and Session
+2.Configuration and Application
+3.Log in using Cookie and Seesion
+
+1.Cookie:(client side)
+A cookie is a small piece of text stored on a user's computer by their browser. Common uses for
+cookies are authentication,storing of site preferences,shopping cart items, and server session identification.
+
+Seesion:(Server side)
+A session can be defined as a server-side storage of information that is desired to persist throughtout the
+user's interaction with the web site or web application
+
+2.Setcookie
+Setcookie(string name, string value, int expire, string path, string domain, int secure);
+name and value must be defined.
+
+ex:
+Setcookie("Cookie_name","cookievalue",time()+3600,"/forum",".php.com",1);
+
+2.1 accept and process(cookie)
+
+echo $_COOKIE['Cookie_name'];
+
+2.2 Remove Cookie
+
+SetCookie("Cookie","");		//reset
+SetCookie("Cookie","value",time()-1/time());	//expire date
+
+Limits:
+1.must be set cookie before the HTML
+2.one browser can set cookie smaller than 30; and cannot be exceed 4kb;
+
+3.Session
+Session_start()		//initialisation session.need in file header
+$_SESSION[name]=value;	//set seesion
+echo $_SESSION[name]	//print
+isset($_SESSION[name])	//estimate
+unset($_SESSION[name])	//remove
+session_destroy();	//destroy all session
+
+*notice: session_register(), session_unregister, session_is_registered cannot use in PHP5
