@@ -1,0 +1,27 @@
+1.File Manipulation function (fopen,fread,filesize,fwrite,fclose)
+
+1.1 fopen: open file
+
+fopen(path_or_filename, open_type(r,w,a));
+
+1.2 fread: read file
+
+fread(filename,filesize(filenmae));
+
+1.3 filesize: file size
+
+filesize(path or filename);
+
+1.4 fwrite: write
+
+fwrite(path or filename, content);
+
+1.5 fclose: close file
+
+fclose(filename or path);
+
+2. unlink() mkdir() remove function
+
+2.1 unlink(path or filename);
+
+2.2 mkdir(path or catalog);

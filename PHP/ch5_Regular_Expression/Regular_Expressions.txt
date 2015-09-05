@@ -1,0 +1,74 @@
+1.Regular Exprssion:
+In the web page, there is often a need to find some complex fules in line with the string.
+Regular expression syntax is used to describe these rules.
+
+E-mail, phone number.
+
+main role: Segmentation, Matching, Search, Replace
+
+
+1.1 preg_match(perl)
+
+ex: preg_match(mode, string subject, array matches)
+preg_match('/abc/','dacbabcasda',$arr);	//output is abc
+print_r($arr);
+
+1.2 ereg(Linux)
+
+ex: ereg(mode, string subject, array regs)
+
+1.3 elements of regular expression(need at least one atom)
+1. atom			
+a-z A-Z 0-9
+(abc)(skd)	//must be the same in bracket, you can search
+[abcs][^abd]	//one of thoese elements in [], can search
+		//^abd	can match except abd
+\d		//include all numbers[0-9]
+\D		//[^0-9]	except numbers
+\w		//include all alpjabet[a-z A-Z 0-9]
+\W		//[^a-z A-Z 0-9]
+\s		//include blank area(\f,\n,\r)
+
+2. Metacharacter	(special string)
+1. *		//0 or more quantifier of previous element
+2. .		//0 or more quantifier	no include newline
+4. +		//1 or more quantifier of previous element
+5. ?		//0 or 1 quantifier of previous element
+6. |		//start of alternative branch
+7. ^		//assert start of subject
+8. $		//assert end of subject or before a terminating newline
+9. \b		//word boundary
+10.\B		//
+11.{m}		//repeat m times
+12.{m,}		//repeat times larger than m
+13.{m,n}	//repeat times between m and n
+14.()		//
+
+3. operation priority
+1.()
+2.*,?,+,{}
+3.^,$,\b
+4.|
+
+4. Mode modifier	(i,m,S,U...)
+4.1 Mode modifier
+1.i		//makes the regex case insensitive
+2.m		//for "multi-line mode" makes the caret and dollar match at the start and end of each line in the subject string
+3.s		//makes dot match all characters, including line breaks
+4.x		//turn on free-spacing mode
+5.A		//match from the beginning
+6.D		//makes dot,caret,and dollar treat only newline
+7.U		//ungreedy mode, which switches the syntax for greedy and lazy quantifilers
+
+5. Main Role
+5.1.Matching
+ex:
+preg_match_all(string pattern, string subject, array matches[,int flags]);
+
+5.2.Replace
+ex:
+preg_replace(mixed pattern,mixed replacement, mixed subject[,int limit]);
+
+5.3.Segmentation
+preg_split(string pattern, string subject[,int limit[,int flags]]);
+
