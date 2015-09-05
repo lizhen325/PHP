@@ -1,0 +1,11 @@
+1.SQL search
+%:0 or more 
+_:single character
+
+1.search to begin with PHP100
+SELECT *FROM table WHERE title LIKE 'PHP100%';
+2.search to end with PHP100
+SELECT *FROM table WHERE title LIKE '%PHP100';
+3.serach PHP100
+SELECT *FROM table WHERE title LIKE '%PHP100%';
+

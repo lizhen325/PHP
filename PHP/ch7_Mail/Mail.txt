@@ -1,0 +1,17 @@
+1.Sending mail process:
+
+socket connection-> SMTP -> request infor -> send
+
+2.Sending mail: mail() function
+mail(to,subject,message,headers,parameters);
+
+to(must)		//receiver mail address
+subject(must)		//mail title (no including newline)
+message(must)		//information
+headers			//masthead	ex:From, Cc, Bcc
+parameters		//additional parameter (Sendmail)
+
+3.fscoketopen function is to connect to internet
+fscoketopen(string hostname,int port,int[errno],string[errstr],int[timeout]);
+
+port is 25 because SMTP
