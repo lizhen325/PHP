@@ -1,0 +1,58 @@
+AJAX(Asynchronous javascript and xml) is a technique for creating fast and dynamic web pages
+AJAX allows web pages to be updated asynchronously by exchanging some amounts of data with the server behind the scenes.
+This means that it is possible to update pars of a web page, without reloading the whole page
+AJAX uses a combination of XMLHttpRequest object, JavaScript,DOM,CSS,XML
+
+example: verify the username exists
+
+1. check browser and create AJAX
+
+function getXmlHttpObject()
+{
+	var xmlHttpRequest;
+	if(window.ActiveXObject)
+	{
+		xmlHttpRequest=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	else
+	{
+		xmlHttpRequest= new XMLHttpRequest();
+	}
+	return xmlHttpRequest;
+}
+
+var myxmlHttpRequest;
+myxmlHttpRequest=getXmlHttpObject();
+
+
+2.AJAX request(HTTP request): send request
+
+//open request
+myxmlHttpRequest.open("get",url,true);
+myxmlHttpRequest.onreadystatechange=conduct;
+//send request
+myxmlHttpRequest.send(null); //if get request, send(null)
+
+3.another new php document to change the content(registerProcess.php)
+
+4. function conduct
+if(myxmlHttpRequest.readyState==4)
+{
+	window.alert("sucess"+myxmlHttpRequest.responseText);
+}
+
+Notice
+var url="/my portable files/registerProcess.php?username="+$('username').value;
+myxmlHttpRequest.open("get",url,true);
+
+Problemd:
+Get:
+Using get method to send request, if the username does not change when you are submitting, the browser will not actually send the request, it fetch data from cache
+Solution:
+1.url="/my portable files/registerProcess.php?mytime="+ new Date() +"&username="+$('username').value;
+2.permit cache:	header("Cache-Control:no cache");
+
+Using post send request
+http_request.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+http_request.send("data");
+
