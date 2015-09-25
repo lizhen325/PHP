@@ -1,0 +1,44 @@
+.style1
+{
+	width:1000px;
+	height:300px;
+	boder:10px solid red;
+	margin: auto;
+	
+}
+.style2
+{	
+	margin: auto;
+	background-color: blue;
+	font-size: 40px;
+}
+.style3
+{
+  	text-decoration: none;
+  	margin-left: 100px;
+  	margin-top:30px;
+  	padding: 2px 6px 2px 6px;
+ 	padding-top: 3px;
+ 	padding-left: 20px;
+ 	margin-bottom: 40px;
+}
+.style4
+{
+	margin-left: 125px;
+	font-size: 30px;
+	background-color: green;
+}
+.style5
+{
+	font-size: 30px;
+	color: red;
+}
+.style6
+{
+	margin-left: 600px;
+	margin-top: 10px;
+}
+body
+{
+	background-image: url('image/0.jpg')
+}

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\a2.clpprj">
+	<settings><PM_URL><![CDATA[C:/...localweb/]]></PM_URL><PM_HOME_URL><![CDATA[C:/...localweb/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up_process.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\test.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\check.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\loggedin.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_proess.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\main.html"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\members.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\my.css"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile_Process.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\show_score.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Unsubscribe.php"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Unsubscribe_Process.php"/>
+	</lastopfiles>
+	<codestructure version="5.0">
+		<phptree>
+			<treenode node="Admin_Service.php;PHP:PHP Include;C:\Users\zhenl_000\Desktop\project_1\LoginProcess.php;f15;1;32;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="login_service.php;PHP:PHP Include;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_proess.php;f15;2;32;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="mysql.php;PHP:PHP Include;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up_process.php;f15;1;24;1;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php;f14;1;23;1;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\check.php;f16;1;25;1;;Codelobster1.php;f15;1;24;1;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\loggedin.php;f15;1;24;1;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\members.php;f15;3;24;3;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f15;136;24;136;;Codelobster3.php;f15;1;24;1;;Codelobster2.php;f15;1;24;1;;Codelobster5.php;f15;1;24;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="sign_up_process.php;PHP:PHP Include;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up.php;f15;2;34;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="AdminService;PHP:Class Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php;f1;2;2;21;;;;vpos;;v;;r;;d1,3;;b0,0;;m">
+				<treenode node="checkAdmin;PHP:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php;f9;4;3;20;;;;vpos;;v;;r;;d2,5;;b1,0;;musername;;ppassword;;p">
+					<treenode node="Mysql;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php;f3;8;9;8;;;;vposmysql;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="password;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php;f39;4;48;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="res;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php;f3;10;7;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="row;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php;f6;12;10;12;;;;vposarray;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php;f3;6;7;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="username;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php;f29;4;38;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="mysql;PHP:Class Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f1;1;2;77;;;;vpos;;v;;r;;d1,2;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f9;9;3;12;;;;vpos;;v;;r;;d2,10;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f3;11;8;11;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="close;PHP:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f9;69;3;75;;;;vpos;;v;;r;;d2,70;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f13;71;18;71;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="connect;PHP:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f9;14;3;18;;;;vpos;;v;;r;;d2,15;;b1,0;;m">
+					<treenode node="this;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f3;16;8;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="delete;PHP:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f9;53;4;67;;;;vpos;;v;;r;;d2,54;;b1,0;;mtable;;pwhere;;p">
+					<treenode node="result;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f3;62;10;62;;;;vposresource;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f3;61;7;61;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="table;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f25;53;31;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="where;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f32;53;38;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="insert;PHP:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f9;26;3;30;;;;vpos;;v;;r;;d2,27;;b1,0;;mtable;;pname;;pvalue;;p">
+					<treenode node="insert;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f3;28;10;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="name;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f32;26;37;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="table;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f25;26;31;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f11;28;16;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="value;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f38;26;44;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="query;PHP:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f9;20;3;24;;;;vpos;;v;;r;;d2,21;;b1,0;;msql;;p">
+					<treenode node="res;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f3;22;7;22;;;;vposresource;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f24;20;28;20;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="update;PHP:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f9;32;3;51;;;;vpos;;v;;r;;d2,33;;b1,0;;marray;;ptable;;pwhere;;p">
+					<treenode node="array;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f25;32;31;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="key;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f20;34;24;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="result;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f2;46;9;46;;;;vposresource;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sets;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f3;36;8;36;;;;vposstring;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f2;45;6;45;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="table;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f32;32;38;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="val;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f26;34;30;34;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="where;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f39;32;45;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="conn;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f10;7;15;7;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
+				</treenode>
+				<treenode node="dbname;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f10;6;17;6;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
+				</treenode>
+				<treenode node="host;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f10;3;15;3;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
+				</treenode>
+				<treenode node="password;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f10;5;19;5;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
+				</treenode>
+				<treenode node="username;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php;f10;4;19;4;;;;vpos;;v;;r;;d-1,-1;;b3,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="getCookieVal;PHP:Function Name;C:\Users\zhenl_000\Desktop\project_1\Login.php;f1;35;2;43;;;;vpos;;v;;r;;d1,36;;b0,0;;mkey;;p">
+				<treenode node="_COOKIE;PHP:Var Name;C:\Users\zhenl_000\Desktop\project_1\Login.php;f11;37;19;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="key;PHP:Var Name;C:\Users\zhenl_000\Desktop\project_1\Login.php;f23;35;27;35;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="_COOKIE;PHP:Var Name;C:\Users\zhenl_000\Desktop\project_1\LoginProcess.php;f12;14;20;14;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="_GET;PHP:Var Name;C:\Users\zhenl_000\Desktop\project_1\Login.php;f11;23;16;23;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f11;53;16;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="_POST;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up.php;f11;15;17;15;;C:\Users\zhenl_000\Desktop\project_1\LoginProcess.php;f5;2;11;2;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Codelobster5.php;f11;1;17;1;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up_process.php;f11;2;17;2;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_proess.php;f11;3;17;3;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\check.php;f12;3;18;3;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f10;6;16;6;;Codelobster2.php;f9;2;15;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="_SESSION;PHP:Var Name;C:\Users\zhenl_000\Desktop\project_1\LoginProcess.php;f16;6;25;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="adminService;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up.php;f1;17;14;17;;C:\Users\zhenl_000\Desktop\project_1\LoginProcess.php;f1;23;14;23;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_proess.php;f1;5;14;5;;;;vposAdminService;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="answer;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f2;8;9;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="array;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f1;139;7;139;;Codelobster2.php;f1;10;7;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="b;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up_process.php;f2;8;4;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="checkCode;PHP:Var Name;C:\Users\zhenl_000\Desktop\project_1\LoginProcess.php;f1;4;11;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="error;PHP:Var Name;C:\Users\zhenl_000\Desktop\project_1\Login.php;f2;24;8;24;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f2;54;8;54;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="id;PHP:Var Name;C:\Users\zhenl_000\Desktop\project_1\LoginProcess.php;f1;2;4;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="miss;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f8;3;13;3;;;;vpos;;v;;r;;d-1,-1;;b0,5;;m">
+			</treenode>
+			<treenode node="mysql;PHP:Var Name;Codelobster1.php;f1;2;7;2;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\loggedin.php;f1;2;7;2;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\members.php;f1;5;7;5;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f1;137;7;137;;Codelobster3.php;f1;2;7;2;;Codelobster2.php;f1;9;7;9;;Codelobster5.php;f1;3;7;3;;;;vposmysql;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="Mysql;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up_process.php;f1;6;7;6;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\check.php;f2;7;8;7;;;;vposmysql;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="name;PHP:Var Name;C:\Users\zhenl_000\Desktop\project_1\LoginProcess.php;f1;24;6;24;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="number_of_problems;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f1;113;20;113;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="password;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up.php;f1;16;10;16;;C:\Users\zhenl_000\Desktop\project_1\LoginProcess.php;f1;3;10;3;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up_process.php;f1;3;10;3;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_proess.php;f1;4;10;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="problem1;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Codelobster5.php;f1;1;10;1;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="res;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\check.php;f2;9;6;9;;Codelobster1.php;f1;4;5;4;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\loggedin.php;f1;4;5;4;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\members.php;f1;8;5;8;;Codelobster3.php;f1;4;5;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="right;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f8;1;14;1;;;;vpos;;v;;r;;d-1,-1;;b0,5;;m">
+			</treenode>
+			<treenode node="row;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\check.php;f8;10;12;10;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\loggedin.php;f8;38;12;38;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\members.php;f7;11;11;11;;Codelobster3.php;f7;5;11;5;;;;vposarray;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="score;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f8;4;14;4;;;;vpos;;v;;r;;d-1,-1;;b0,5;;m">
+			</treenode>
+			<treenode node="sql;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\check.php;f2;5;6;5;;Codelobster1.php;f1;3;5;3;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\loggedin.php;f1;3;5;3;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\members.php;f1;6;5;6;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f1;138;5;138;;Codelobster3.php;f1;3;5;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="update;PHP:Var Name;Codelobster2.php;f1;2;8;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="username;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up.php;f1;15;10;15;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up_process.php;f1;2;10;2;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_proess.php;f1;3;10;3;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\check.php;f2;3;11;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="wrong;PHP:Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php;f8;2;14;2;;;;vpos;;v;;r;;d-1,-1;;b0,5;;m">
+			</treenode>
+		</phptree>
+		<jstree>
+			<treenode node="check;JS:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f0;22;1;42;;;;vpos;;v;;r;;d0,23;;b0,0;;m">
+				<treenode node="conduct;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f38;37;45;37;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f38;37;45;37;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f38;37;45;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="data;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f6;29;10;29;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f6;29;10;29;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f6;29;10;29;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="myxmlHttpRequest;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f1;25;17;25;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f1;25;17;25;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f1;25;17;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="onreadystatechange;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f19;37;37;37;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f19;37;37;37;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f19;37;37;37;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="url;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f6;28;9;28;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f6;28;9;28;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f6;28;9;28;;;;vposString;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="conduct;JS:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f0;43;1;50;;;;vpos;;v;;r;;d0,44;;b0,0;;m">
+				<treenode node="myxmlHttpRequest;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f4;46;20;46;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f4;46;20;46;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f4;46;20;46;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="readyState;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f21;46;31;46;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f21;46;31;46;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f21;46;31;46;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="getXmlHttpObject;JS:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f0;7;1;19;;;;vpos;;v;;r;;d0,8;;b0,0;;m">
+				<treenode node="window;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f4;10;10;10;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f4;10;10;10;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f4;10;10;10;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="xmlHttpRequest;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f5;9;19;9;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f5;9;19;9;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f5;9;19;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="prototype;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f5;9;19;9;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php;f5;9;19;9;;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f5;9;19;9;;;;vposXMLHttpRequest;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="document;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f8;53;16;53;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="id;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f11;51;13;51;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="myxmlHttpRequest;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php;f4;20;20;20;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="window;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php;f0;3;6;3;;Codelobster4.php;f0;2;6;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="onload;JS:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php;f7;3;1;15;;Codelobster4.php;f7;2;1;11;;Codelobster4.php;f7;2;1;11;;;;vpos;;v;;r;;d0,3;;b0,0;;m">
+					<treenode node="confirmIt;JS:JS Var Name;Codelobster4.php;f43;9;52;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="document;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php;f13;5;21;5;;Codelobster4.php;f15;4;23;4;;Codelobster4.php;f15;4;23;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="elems;JS:JS Var Name;Codelobster4.php;f24;8;29;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="i;JS:JS Var Name;Codelobster4.php;f13;8;14;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="l;JS:JS Var Name;Codelobster4.php;f20;8;21;8;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="oRemove;JS:JS Var Name;Codelobster4.php;f5;4;12;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						<treenode node="onclick;JS:Function Name;Codelobster4.php;f12;5;5;7;;;;vpos;;v;;r;;d35,5;;b0,0;;me;;p">
+							<treenode node="e;JS:JS Var Name;Codelobster4.php;f32;5;33;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+						</treenode>
+					</treenode>
+					<treenode node="oSubmit;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php;f5;5;12;5;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						<treenode node="onclick;JS:Function Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php;f9;7;2;14;;;;vpos;;v;;r;;d1,8;;b0,0;;m">
+							<treenode node="oText;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php;f5;9;10;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+								<treenode node="value;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php;f11;9;16;9;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+								</treenode>
+							</treenode>
+							<treenode node="window;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php;f3;12;9;12;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+							</treenode>
+						</treenode>
+					</treenode>
+					<treenode node="oText;JS:JS Var Name;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php;f5;6;10;6;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+			</treenode>
+		</jstree>
+		<scsstree>
+		</scsstree>
+		<lesstree>
+		</lesstree>
+	</codestructure><todoblock>
+	</todoblock>
+	<filescache>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\test.php" crc="-852137630"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign1_up.php" crc="-890768955"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\sign_up_process.php" crc="755462137"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz_Process.php" crc="-638065231"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Quiz.php" crc="-2133044724"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\mysql.php" crc="450109167"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\my.css" crc="481605954"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\members.php" crc="1884683396"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_service.php" crc="-1066066627"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login_proess.php" crc="2015211030"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\login.php" crc="1193900678"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\loggedin.php" crc="-633231782"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\Edit_Profile.php" crc="1735591927"/>
+		<file name="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\my portable files\a2\check.php" crc="-1008721364"/>
+	</filescache>
+</project>
