@@ -1,9 +1,0 @@
-1.fieldset
-<fieldset style = "width:300px">
-<legend><font color="color">Log In</font></legend>
-<form>
-ID<input type = "text" name = "ID"><br/>
-PW<input type = "passworld" name = "password"><br/>
-</form>
-</fieldset>
-2.
